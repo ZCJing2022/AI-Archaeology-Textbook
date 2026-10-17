@@ -87,6 +87,10 @@ Chapman与Wylie（2016，导论，第6页）强调，考古资料成为证据依
 
 一个看似准确的图像分类器，如果把同一件陶器的多张照片随机分到训练集和测试集，可能只是在辨认熟悉的器物。对于研究新遗址的任务，更有意义的检验可能是按器物、遗址、时期或机构分组测试，并报告不同组的表现。这不是一套适用于任何研究的固定规则，而要由考古问题决定**什么才算新证据**。
 
+用于评价的人工资料本身也可能不完整。Zimmer-Dauphinee等（2024，252—254页）比较安第斯地区的人工影像调查与模型探测结果；人工复核发现，模型识别出部分先前未标记的可见遗迹，同时也误把现代建筑和自然地物当作遗迹。人工调查与模型各有漏检，二者合并后也仍可能遗漏共同未识别的目标。这里的复核主要依据影像，不能等同于全部地点已经田野确认。
+
+Ramsey等（2026，2、5—7页）则比较了深度学习模型与专家对18张谷物颖壳多细胞植硅体图像的识别。模型将这组图像全部分类正确，但材料来自现代参照植物，图像经过特定选择，专家也只能根据静态图像判断。作者明确说明模型尚不能直接用于真实考古材料。因此，现代参照材料上的识别成绩，仍需在具有不同保存状况的考古材料上另行检验。
+
 因此，研究报告除总体准确度外，还应说明哪些类别经常混淆、哪些样本被排除、训练和验证资料来自哪里、是否存在跨地点或跨时期的表现差异。必要时与简单人工规则、传统统计或GIS方法比较，才能判断AI是否带来实际价值。
 
 ## 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）
@@ -101,11 +105,11 @@ Chapman与Wylie（2016，导论，第6页）强调，考古资料成为证据依
 
 本节只建立直观认识；空间自相关的进一步方法讨论安排在[第14章](chapter-14.qmd)相关内容中。
 
-### 当代AI实证研究为何重视外推验证？ {.unnumbered}
+### 模型在新资料上的适用范围 {#当代ai实证研究为何重视外推验证 .unnumbered}
 
-Orengo等（2026）系统讨论了考古机器学习中的**小样本、类别不均衡、背景多样性、特征表示与空间分散**。论文举出形态近似却并非考古遗迹的对象、不同传感器和地形条件等作为误识别与跨区域转移困难的来源，说明仅靠内部测试成绩不足以证明方法可以推广到新资料。[原论文第2—3节](https://doi.org/10.1016/j.jas.2026.106571)。
+Orengo等（2026，3—4页）讨论了考古机器学习中的**小样本、类别不均衡、背景多样性、特征表示与空间分散**。形态近似的现代地物、不同传感器及资料处理方式，可能造成误识别和跨区域转移困难。作者进一步指出，内部测试的良好成绩仍需通过田野核验或其他独立证据，检验模型在实际考古研究中的用途（7—8页）。[原论文](https://doi.org/10.1016/j.jas.2026.106571)。
 
-Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。[文章](https://doi.org/10.1017/aap.2021.6)。**以上都是已发表作者针对考古机器学习提出的具体论证；它们不表示任何特定算法在全部地区都会失效。**
+Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。[文章](https://doi.org/10.1017/aap.2021.6)。
 
 ### 可靠性不仅是一个模型分数 {.unnumbered}
 
@@ -150,7 +154,9 @@ Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存
 - Murphy, Kevin P. 2023. *Probabilistic Machine Learning: Advanced Topics*. MIT Press.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Prince, Simon J. D. 2023. [*Understanding Deep Learning*.](https://udlbook.github.io/udlbook/) MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
+- Ramsey, Monica N., Melanie Pugliese, Lachlan Kyle-Robinson, Iban Berganzo-Besga, Rebecca Roberts, Jennifer Bates, Francesca D’Agostini, Zachary C. Dunseth, Thomas C. Hart, Emma Jenkins, Carolina Jiménez-Arteaga, Celine Kerfant, Marco Madella, Sigrid Osborne, Robert Power, Abel Ruiz-Giralt, and Philippa Ryan. 2026. [“Experts against Automation? Comparing Artificial Intelligence and Human Identifications of Multi-Cell Cereal Husk Phytoliths.”](https://doi.org/10.1016/j.jasrep.2026.105873) *Journal of Archaeological Science: Reports* 73: 105873.
 - Renfrew, Colin, and Paul Bahn. 2020. *Archaeology: Theories, Methods and Practice*. 8th ed. Thames & Hudson.
 - Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. 2023. [*Dive into Deep Learning*.](https://d2l.ai/) Cambridge University Press. 本章所引章节采用英文在线版1.0.3（访问日期：2026-10-16）。
+- Zimmer-Dauphinee, James, Parker VanValkenburgh, and Steven A. Wernke. 2024. [“Eyes of the Machine: AI-Assisted Satellite Archaeological Survey in the Andes.”](https://doi.org/10.15184/aqy.2023.175) *Antiquity* 98(397): 245–259.
 - 马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 *Taming Silicon Valley*.
 - 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.
