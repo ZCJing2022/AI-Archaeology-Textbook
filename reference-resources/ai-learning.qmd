@@ -40,12 +40,29 @@ toc-depth: 2
 
 ## 智能体式AI {#agentic-ai-learning}
 
-智能体式AI（Agentic AI）可以用来组织多步研究任务。阅读时可追踪：哪一步由预设流程安排，哪一步由模型依据工具结果选择，以及何时需要人的判断。第1章的[铭文图像处理实例](../chapters/chapter-01.qmd#agentic-ai)可帮助理解这种工作方式。
+智能体式AI（Agentic AI）可以用来组织多步研究任务。阅读时可追踪：哪一步由预设流程安排，哪一步由模型依据工具结果选择，以及何时需要人的判断。第1章的[铭文图像处理实例](../chapters/chapter-01.qmd#agentic-ai)可帮助理解这种工作方式。概念阅读可先看图解与实例，编程练习在掌握Python基础后选做，评价专题则结合具体研究任务查阅。
+
+### 概念与图解
 
 | 资源 | 适合怎样使用 | 阅读入口 |
 |---|---|---|
-| **ReAct: Synergizing Reasoning and Acting in Language Models**（Shunyu Yao等，2023） | **原始研究。** 第2页图1及第3—4页介绍步骤说明、检索操作与返回信息如何配合；第6页讨论重复循环和无效检索。原实验不涉及考古材料。 | [作者存档与版本记录](https://arxiv.org/abs/2210.03629)；[ICLR 2023会议定稿](https://arxiv.org/pdf/2210.03629v3)。 |
+| **An Illustrated Guide to AI Agents**（Maarten Grootendorst、Jay Alammar，2026） | **图解入门。** 先读第1章，再读第4章开篇，理解工具、记忆和中间结果的作用；第7章说明如何检查任务结果与完成过程。Python实践可选读。 | [配套网站](https://ai-agents-book.com/)；[官方代码库](https://github.com/HandsOnLLM/An-Illustrated-Guide-To-AI-Agents)；[出版社阅读入口](https://www.oreilly.com/library/view/an-illustrated-guide/9798341662681/)。 |
 | **AI Engineering: Building Applications with Foundation Models**（Chip Huyen，2025） | **概念与评价。** 先读作者节选中的“Agent Overview”和“Agent Failure Modes and Evaluation”，再看“Planning overview”，理解任务、工具、规划及失误之间的关系。 | [作者免费“Agents”节选](https://huyenchip.com/2025/01/07/agents.html)，改编自书中第6章；[作者书目页](https://huyenchip.com/books/)。 |
+| **ReAct: Synergizing Reasoning and Acting in Language Models**（Shunyu Yao等，2023） | **原始研究。** 第2页图1及第3—4页介绍步骤说明、检索操作与返回信息如何配合；第6页讨论重复循环和无效检索。原实验不涉及考古材料。 | [作者存档与版本记录](https://arxiv.org/abs/2210.03629)；[ICLR 2023会议定稿](https://arxiv.org/pdf/2210.03629v3)。 |
+
+### 编程实践
+
+| 资源 | 适合怎样使用 | 阅读与练习入口 |
+|---|---|---|
+| **Build an AI Agent (From Scratch)**（Jungjun Hur、Younghee Song，2026） | **从概念到实现。** 先理解预设流程与模型选择下一步的区别，再选读工具、记忆与评价的构建示例。代码部分需要Python基础。 | [出版社与试读](https://www.manning.com/books/build-an-ai-agent-from-scratch)；[作者配套代码](https://github.com/shangrilar/ai-agent-from-scratch)。 |
+| **AI Agents in Action**，第2版（Micheal Lanham，2026） | **系统构建与检查。** 第1章3—4、16—18页介绍自主程度与记忆；第7章198—199页讨论输出与来源的对应、人工评价及多个智能体重复错误的问题。编程部分适合有一定Python基础的读者。 | [出版社与试读](https://www.manning.com/books/ai-agents-in-action-second-edition)；[第2版配套代码](https://github.com/cxbxmxcx/AI-Agent-Workflows)。 |
+
+### 评价与专题
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **AI Agents: The Definitive Guide**（Nicole Koenigstein，2026） | **评价与人工控制。** 选读第2章“Designing Human-in-the-Loop Workflows”和第8—9章，了解人工核查、实际任务测试及过程记录。部署与编程内容适合进阶阅读。 | [出版社阅读入口](https://www.oreilly.com/library/view/ai-agents-the/0642572247775/)；[作者配套代码](https://github.com/Nicolepcx/ai-agents-the-definitive-guide)。 |
+| **Agentic AI: Theories and Practices**（Ken Huang主编，2025） | **协作与人机分工。** 选读Ken Huang与Jerry Huang合著的第3章78—79页，比较单个智能体与整个系统的评价；第5章147、149—150页讨论人的参与。适合作为进阶选读。 | [出版社与目录](https://link.springer.com/book/10.1007/978-3-031-90026-6)；[第3章阅读入口](https://link.springer.com/chapter/10.1007/978-3-031-90026-6_3)。 |
 
 作为研究助手的智能体负责组织研究任务；[基于主体的建模（ABM）](programming.qmd)则用模拟主体及其交互研究可能形成的总体模式（Romanowska、Wren与Crabtree，2021，6—7页）。两类系统中的主体承担不同作用，具体研究需要说明它们代表什么、执行什么操作。
 

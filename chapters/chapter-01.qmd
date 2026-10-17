@@ -77,7 +77,9 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 例如，EpiAgent针对受损铭文图像，让语言模型根据图像分析安排去噪、笔画补全等工具，并依据结果调整步骤；研究设计还允许专家核查文字线索和复原结果（Zhu等，2026，39307—39308页）。这些操作产生的是复原图像。补出的笔画属于复原假设，需要与原图、字形和语境一起核查，不能当作原件仍然保存的痕迹。
 
-连续调用工具仍可能出现检索无效、步骤重复等问题（Yao等，2023，6页）。用于考古研究时，应保存原始材料与中间结果，检查工具选择、来源对应及人工修改，并评价整个任务的完成质量。概念说明与相关阅读见[智能体式AI参考资源](../reference-resources/ai-learning.qmd#agentic-ai-learning)。
+智能体还可以把检索材料、先前操作的记录及生成的中间内容保存为“记忆”，供后续步骤调用（Grootendorst与Alammar，2026，第4章“Memory”）。整理甲骨或铭文资料时，应分别标明原始记录、人工释读与模型生成候选的来源和核查状态，避免在后续步骤中把先前生成的候选当作已确认的材料。
+
+连续调用工具仍可能出现检索无效、步骤重复等问题（Yao等，2023，6页）。多个智能体也可能重复相同错误，特别是在使用相同模型时（Lanham，2026，198—199页）。它们的答案一致，也不能代替对原始材料的核查。用于考古研究时，应保存原始材料与中间结果，检查工具选择、来源对应及人工修改，并评价整个任务的完成质量。概念说明与相关阅读见[智能体式AI参考资源](../reference-resources/ai-learning.qmd#agentic-ai-learning)。
 
 ## AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成
 
@@ -209,9 +211,11 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 - Brughmans, Tom, and Matthew A. Peeples. 2023. [*Network Science in Archaeology*.](https://doi.org/10.1017/9781009170659) Cambridge University Press.
 - Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
 - Chollet, François, and Matthew Watson. 2026. *Deep Learning with Python*. 3rd ed. Manning.
+- Grootendorst, Maarten, and Jay Alammar. 2026. [*An Illustrated Guide to AI Agents: Concepts and Code for Building Agents with LLMs, Tools, and Memory*.](https://www.oreilly.com/library/view/an-illustrated-guide/9798341662681/) O’Reilly Media.
 - Hinz, Martin, Jan Kolář, Monika Baumanova, Julian Laabs, Maria Wunderlich, Margaux Depaermentier, and Michael Kempf. 2025. [“Current Key Intersections between Theoretical and Computational Archaeology.”](https://doi.org/10.1017/aap.2025.10102) *Advances in Archaeological Practice* 13(4): 528–545.
 - Huggett, Jeremy. 2024. [“Changing Theory and Practice? CAA and Archaeology’s Digital Turn.”](https://doi.org/10.5334/jcaa.144) *Journal of Computer Applications in Archaeology* 7(1): 316–331.
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
+- Lanham, Micheal. 2026. [*AI Agents in Action: Intelligent Workflows with LLMs, MCP, A2A, and More*.](https://www.manning.com/books/ai-agents-in-action-second-edition) 2nd ed. Manning.
 - Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14(2): 218–233.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
