@@ -28,19 +28,19 @@
 
 20世纪中叶，一些考古学家希望研究不再停留于发现器物、划分文化或叙述变化，而能更明确地提出关于过去社会运行方式的假说，并利用观察资料加以检验。这一取向通常与**新考古学（New Archaeology）**及后来所称的过程考古学（processual archaeology）联系在一起。
 
-Lewis Binford发表于1962年的《Archaeology as Anthropology》，主张在更广泛的人类学问题中分析物质文化，而不是把不同器物的一切相似和差异都解释成同一种文化传播或变迁过程。David Clarke的《Analytical Archaeology》（1968）则重视分析单位、属性、类型、组合及更明确的研究方法。这些研究推动了考古学研究问题与分析单位的明确表达，但**不等于今日的机器学习**；同时也不能简单以“有没有统计计算”划定广义AI的全部范围。两条历史线索需要在方法与学科背景上分别讨论。
+Lewis Binford在1962年的《Archaeology as Anthropology》中，主张通过物质文化研究人类文化的异同及其变化，并指出应考察不同器物类别的功能背景，不能把它们的相似和差异都归入同一种解释模式（217—219页）。David Clarke的《Analytical Archaeology》（1968年初版）强调明确界定属性、器物、类型和组合等基本概念及其关系，并清楚说明研究模型与程序（Clarke，1978，xv页）。这些研究重视考古问题、基本概念与研究程序的明确表达，但**不等于今日的机器学习**；同时也不能简单以“有没有统计计算”划定广义AI的全部范围。两条历史线索需要在方法与学科背景上分别讨论。
 
 所谓**系统分析**，可以先把聚落理解成多种活动和关系相互作用的整体：居住、资源获取、生产、交换和仪式既有不同的物质遗存，也可能共同影响某一遗址的面貌。研究者希望了解的不是单件器物，而是不同活动如何相互关联。
 
 计算模型可以帮助研究者检查某些假设。例如，在一项**完全虚构的教学情境**中，假设两个聚落离水源的距离不同，研究者可以比较在不同运输成本假设下，物资交换路径可能怎样变化。但模型中设定的“居民只选择最短路线”是一项待检验的假设，而不是古代人的实际行为已经被证明。
 
-新考古学的重要贡献，在于强调清晰的问题、可讨论的假说和可以反驳的解释。不过，研究过程并非只要有模型和数据就会自动客观。研究者如何划分人类活动、选择变量和规定因果关系，都需要审查。
+Binford（1962，224页）强调用资料检验有关文化变化的假说。不过，研究过程并非只要有模型和数据就会自动客观。研究者如何划分人类活动、选择变量和规定因果关系，都需要审查。
 
 ## 后过程考古学对数据与解释的批评
 
 到了20世纪后期，考古理论发生了新的争论。后过程考古学（post-processual archaeology）中的不同学者从各自角度强调：人类行为并不总能由环境适应或普遍规律充分说明；物质文化还涉及象征、权力、身份、历史情境，以及研究者自身的解释立场。
 
-Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一项重要读物。它提醒我们，器物的意义不一定能从外形或数量直接读出。两组陶器即使形态相近，在不同的使用情境中也可能具有不同意义；反过来，外形明显不同的器物可能参与相同的仪式或日常活动。
+Ian Hodder的《Reading the Past》初版于1986年。Hodder与Scott Hutson在第3版中强调，理解器物的意义，需要考察它与地层、建筑空间、坑穴或墓葬的关系；这些关联提供解释线索，但情境本身也需要解释（Hodder与Hutson，2003，4—5页）。例如，研究形态相近的陶器时，还应比较它们的出土位置、共存遗物与使用痕迹，再讨论其用途和意义。
 
 **这不是“后过程考古学反对数字”那么简单。** 重要分歧在于：哪些问题可以通过量化数据回答？数据如何被选择、命名和记录？同一个统计关系在不同历史情境下可能意味着什么？
 
@@ -168,7 +168,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 
 **入门：** 先阅读第3—4章，掌握考古记录如何形成数据，以及保存、取样与记录偏差为什么影响所有计算方法。
 
-**进阶：** 对照Binford（1962）、Clarke（1968）及Hodder（1986），比较研究问题、分析单位与历史解释的不同关注点；用Wheatley与Gillings（2002）进一步理解空间技术与考古解释的关系。
+**进阶：** 对照Binford（1962）、Clarke（1978，第2版）及Hodder与Hutson（2003，第3版），比较研究问题、分析单位与历史解释的不同关注点；用Wheatley与Gillings（2002）进一步理解空间技术与考古解释的关系。
 
 **研究实践：** 结合[核心案例库](../core-case-library/index.qmd)，为一篇使用AI的研究制作来源、输入、算法、输出和考古解释的证据链。讨论具体方法的使用年代时，注明原始论文或项目记录的出处，并区分当时的实践与后来的回顾。
 
@@ -182,10 +182,10 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 - Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer.
 - Brughmans, Tom, and Matthew A. Peeples. 2023. [*Network Science in Archaeology*.](https://doi.org/10.1017/9781009170659) Cambridge University Press.
 - Chapman, Robert. 2023. *Archaeological Theory: The Basics*. Routledge.
-- Clarke, David L. 1968. *Analytical Archaeology*. Methuen.
+- Clarke, David L. 1978. [*Analytical Archaeology*.](https://doi.org/10.7312/clar90328) 2nd ed., revised by Bob Chapman. New York: Columbia University Press.
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
 - Hinz, Martin, Jan Kolář, Monika Baumanova, Julian Laabs, Maria Wunderlich, Margaux Depaermentier, and Michael Kempf. 2025. [“Current Key Intersections between Theoretical and Computational Archaeology.”](https://doi.org/10.1017/aap.2025.10102) *Advances in Archaeological Practice* 13(4): 528–545.
-- Hodder, Ian. 1986. *Reading the Past: Current Approaches to Interpretation in Archaeology*. Cambridge University Press.
+- Hodder, Ian, and Scott Hutson. 2003. [*Reading the Past: Current Approaches to Interpretation in Archaeology*.](https://doi.org/10.1017/CBO9780511814211) 3rd ed. Cambridge University Press.
 - Huggett, Jeremy. 2024. [“Changing Theory and Practice? CAA and Archaeology’s Digital Turn.”](https://doi.org/10.5334/jcaa.144) *Journal of Computer Applications in Archaeology* 7(1): 316–331.
 - Nikita, Efthymia, and Marcos Martinón-Torres. 2026. [“Next Generation Archaeological Science: From the Past to the Future.”](https://doi.org/10.1016/j.jas.2026.106603) *Journal of Archaeological Science* 192: 106603.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
